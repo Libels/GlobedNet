@@ -1,9 +1,9 @@
-# GlobedNet
-Interactive Encylopedia
+# YaGitu
+Website para pemalas
 
 ## To Do
 
-- [ ] 3D Poly Globe
+- [ ] Homepage
 - [ ] Database
 - [ ] Data Editor
 - [ ] Security
