@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Dolenan</title>
+	<style type="text/css">
+		body {
+			text-align: center;
+		}
+
+		h1 {
+			font-size: 72pt;
+			margin: 0.3em;
+		}
+
+		p {
+			font-size: 28pt;
+		}
+
+		button {
+			padding: 1em;
+			font-size: 5em;
+			background: transparent;
+			border-radius: 25px;
+			border: 3px #000 solid;
+		}
+	</style>
+</head>
+<body>
+	<h1 id="tulisan">Dolenan</h1>
+	<button id="mainan">Klik Gua yaw!</button>
+	<p id="motivasi">udah dipencet <span id="jumlah">0</span> kali</p>
+	<script type="text/javascript">
+		var tulisan, pencetan, pesan, jumlah, nilai, kuantitas, warna;
+
+		warna = [
+			'blue', 'red', 'green'
+		];
+
+		nilai = 0;
+		
+		pencetan = document.getElementById('mainan');
+		pesan = document.getElementById('motivasi');
+		jumlah = document.getElementById('jumlah');
+
+		pencetan.onclick = function() {
+			pencetan.style = "background: " + warna[Math.floor(Math.random() * Math.floor(3))];
+			nilai++;
+
+			kuantitas = Math.round(Math.pow(nilai, 0.5));
+
+			jumlah.innerHTML = kuantitas;
+		}
+	</script>
+</body>
+</html>
