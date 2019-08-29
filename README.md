@@ -5,7 +5,7 @@ Sebuah Portofolio dari Pemalas yang tidak hanya menjadi sumber inspirasi namun j
 - [x] Homepage
 - [x] Kobam!
 - [ ] Perkakas
-- [ ] Dongeng
+- [ ] Dolenan
 - [x] Pengenal
 
 (c) 2019 Libels Computer Club
