@@ -31,10 +31,14 @@
 	<button id="mainan">Klik Gua yaw!</button>
 	<p id="motivasi">udah dipencet <span id="jumlah">0</span> kali</p>
 	<script type="text/javascript">
-		var tulisan, pencetan, pesan, jumlah, nilai, kuantitas, warna;
+		var tulisan, pencetan, pesan, jumlah, nilai, kuantitas, warna, fonts;
 
 		warna = [
 			'blue', 'red', 'green'
+		];
+
+		fonts = [
+			'monospace', 'serif', 'sans-serif'
 		];
 
 		nilai = 0;
@@ -44,7 +48,7 @@
 		jumlah = document.getElementById('jumlah');
 
 		pencetan.onclick = function() {
-			pencetan.style = "background: " + warna[Math.floor(Math.random() * Math.floor(3))];
+			pencetan.style = "background: " + warna[Math.floor(Math.random() * Math.floor(3))] + ";font-family: " + fonts[Math.floor(Math.random() * Math.floor(3))] + ';';
 			nilai++;
 
 			kuantitas = Math.round(Math.pow(nilai, 0.5));
